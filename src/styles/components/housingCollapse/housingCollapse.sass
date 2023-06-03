@@ -4,13 +4,10 @@
     margin: 0 6.9% 0 6.9%
     &__container
         width: 43%
-        &__arrow
-            transition: transform 500ms
-            &:hover
-                transform: rotate(0.5turn)
         &__desc, &__equip
             display: flex
             justify-content: space-between
+            align-items: center
             padding: 10px 15px
             border-radius: 10px
             color: #fff
@@ -18,9 +15,23 @@
             font-size: 24px
         &__text
             margin-bottom: 5px
-            padding: 20px
+            padding: 0 20px 0 20px
             border-radius: 0 0 5px 5px
             font-size: 18px
             line-height: 142.6%
             color: #ff6060
             background: #F6F6F6
+        & .closed
+            max-height: 0
+            transition: max-height 500ms ease-out
+        & .opened
+            max-height: 300px
+            transition: max-height 500ms ease-in
+        & .closed, & .opened
+            overflow: hidden
+        &__arrow
+            width: 24px
+            height: 14px
+            transition: transform 400ms
+            &.actived
+                transform: rotate(0.5turn)
