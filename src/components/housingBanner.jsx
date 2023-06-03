@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import '../styles/components/housingBanner/housingBanner.css'
+
 import arrowNext from '../assets/arrowNext.png'
 import arrowPrev from '../assets/arrowPrevious.png'
 
@@ -14,17 +16,31 @@ const HousingBanner = (props) => {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
   return (
-    <section className="">
-      <img className="arrowPrev" src={arrowPrev} alt="" onClick={prevSlide} />
-      <img className="arrowNext" src={arrowNext} alt="" onClick={nextSlide} />
+    <section className="housingBanner">
+      <img
+        className="housingBanner__arrowPrev"
+        src={arrowPrev}
+        alt=""
+        onClick={prevSlide}
+      />
+      <img
+        className="housingBanner__arrowNext"
+        src={arrowNext}
+        alt=""
+        onClick={nextSlide}
+      />
       {props.data.map((slide, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className={
+              index === current
+                ? 'housingBanner__slide active'
+                : 'housingBanner__slide inactive'
+            }
             key={index}
           >
             {index === current && (
-              <img className="image" src={slide.pictures} alt="" />
+              <img className="housingBanner__slide__img" src={slide} alt="" />
             )}
           </div>
         )

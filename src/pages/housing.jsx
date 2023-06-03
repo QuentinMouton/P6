@@ -14,9 +14,7 @@ const Housing = () => {
   const housing = HousingList.find((housing) => housing.id === id)
   return (
     <div className="housing">
-      {/* {housing.pictures.map((e, index) => ( */}
-      <HousingBanner data={HousingList} img={HousingList.pictures} />
-      {/* ))} */}
+      <HousingBanner data={housing.pictures} img={HousingList.pictures} />
       <HousingHost
         title={housing.title}
         location={housing.location}

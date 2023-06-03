@@ -1,0 +1,39 @@
+.housingBanner 
+    position: relative
+    margin: 0 6.9% 30px 6.9%
+    display: flex
+    &__arrowNext 
+        position: absolute
+        top: 50%
+        right: 5px
+        font-size: 3rem
+        color: #000
+        z-index: 10
+        cursor: pointer
+        user-select: none
+    &__arrowPrev
+        position: absolute
+        top: 50%
+        left: 32px
+        font-size: 3rem
+        color: #000
+        z-index: 10
+        cursor: pointer
+        user-select: none
+    &__slide
+        opacity: 0
+        transition-duration: 1s ease
+        &__img 
+            height: 415px
+            width: 100%
+            object-fit: cover
+            border-radius: 25px
+    &__slide.inactive
+        display: none
+    &__slide.active
+        opacity: 1
+        padding: 17px 40px 13px 40px
+        transition-duration: 1s
+        transform: scale(1.08)
+        width: 100%
+        
