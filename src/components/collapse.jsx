@@ -29,7 +29,9 @@ const Collapse = (props, isOpen) => {
           isClicked ? 'collapse__text opened' : 'collapse__text closed'
         }
       >
+        <br />
         <p>{props.text}</p>
+        <br />
       </div>
     </div>
   )

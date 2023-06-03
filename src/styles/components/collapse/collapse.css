@@ -5,13 +5,19 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 400ms ease-out;
+  padding: 0 20px 0 20px;
+  border-radius: 0 0 5px 5px;
+  font-size: 17px;
+  line-height: 142.6%;
+  color: #ff6060;
+  background: #F6F6F6;
 }
 .collapse .opened {
   max-height: 140px;
   transition: max-height 400ms ease-in;
-  padding: 20px;
+  padding: 0 20px 0 20px;
   border-radius: 0 0 5px 5px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 142.6%;
   color: #ff6060;
   background: #F6F6F6;
