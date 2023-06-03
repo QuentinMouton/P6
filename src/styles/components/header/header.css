@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px 6.9% 50px 6.9%;
+}
+.header__navbar {
+  list-style-type: none;
+  font-size: 24px;
+  display: flex;
+}
+.header__navbar .active {
+  text-decoration: underline;
+}
+.header__navbar__link {
+  color: #ff6060;
+  margin-left: 45px;
+  display: block;
+}/*# sourceMappingURL=header.css.map */

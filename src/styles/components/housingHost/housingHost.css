@@ -1,0 +1,31 @@
+.housingHost {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6.9% 0 6.9%;
+  color: #FF6060;
+}
+.housingHost__title {
+  width: 600px;
+}
+.housingHost__title__h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.housingHost__title__city {
+  height: 26px;
+  font-size: 18px;
+}
+.housingHost__identity {
+  display: flex;
+}
+.housingHost__identity__name {
+  width: 93px;
+  padding: 13px 10px 0 0;
+  font-size: 18px;
+  text-align: right;
+}
+.housingHost__identity__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 30px;
+}/*# sourceMappingURL=housingHost.css.map */

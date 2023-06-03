@@ -1,0 +1,35 @@
+.collapse
+    margin: 0 8.8% 0 8.8%
+    & .closed
+        max-height: 0
+        overflow: hidden
+        transition: max-height 400ms ease-out
+    & .opened
+        max-height: 140px
+        transition: max-height 400ms ease-in
+        padding: 20px
+        border-radius: 0 0 5px 5px
+        font-size: 18px
+        line-height: 142.6%
+        color: #ff6060
+        background: #F6F6F6
+        // margin-bottom: 5px
+        
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+        padding: 10px 15px
+        border-radius: 5px
+        background-color: #ff6060
+        color: #fff
+        font-size: 24px
+        &__arrow
+            width: 24px
+            height: 14px
+            transition: transform 400ms
+        & .active
+            transform: rotate(0.5turn)
+            
+    &__text

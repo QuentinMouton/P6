@@ -1,0 +1,9 @@
+{
+    "git-graph.repository.fetchAndPruneTags": false,
+    "git-graph.repository.includeCommitsMentionedByReflogs": true,
+    "git-graph.repository.showStashes": false,
+    "git-graph.repository.showTags": false,
+    "cSpell.words": [
+        "Kasa"
+    ]
+}

@@ -1,0 +1,12 @@
+.housing__TagsRate {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 6.9% 25px 6.9%;
+}
+
+.tags {
+  display: flex;
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}/*# sourceMappingURL=housing.css.map */

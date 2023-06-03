@@ -1,0 +1,37 @@
+.collapse {
+  margin: 0 8.8% 0 8.8%;
+}
+.collapse .closed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 400ms ease-out;
+}
+.collapse .opened {
+  max-height: 140px;
+  transition: max-height 400ms ease-in;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #ff6060;
+  background: #F6F6F6;
+}
+.collapse__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  color: #fff;
+  font-size: 24px;
+}
+.collapse__container__arrow {
+  width: 24px;
+  height: 14px;
+  transition: transform 400ms;
+}
+.collapse__container .active {
+  transform: rotate(0.5turn);
+}/*# sourceMappingURL=collapse.css.map */
