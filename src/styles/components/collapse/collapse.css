@@ -1,25 +1,21 @@
 .collapse {
   margin: 0 8.8% 0 8.8%;
+  font-size: 17px;
+  line-height: 142.6%;
+  color: #ff6060;
 }
 .collapse .closed {
   max-height: 0;
-  overflow: hidden;
-  transition: max-height 400ms ease-out;
-  padding: 0 20px 0 20px;
-  border-radius: 0 0 5px 5px;
-  font-size: 17px;
-  line-height: 142.6%;
-  color: #ff6060;
-  background: #F6F6F6;
+  transition: max-height 500ms ease-out;
 }
 .collapse .opened {
   max-height: 140px;
-  transition: max-height 400ms ease-in;
+  transition: max-height 500ms ease-in;
+}
+.collapse .closed, .collapse .opened {
+  overflow: hidden;
   padding: 0 20px 0 20px;
   border-radius: 0 0 5px 5px;
-  font-size: 17px;
-  line-height: 142.6%;
-  color: #ff6060;
   background: #F6F6F6;
 }
 .collapse__container {
