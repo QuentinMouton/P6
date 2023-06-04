@@ -1,35 +1,16 @@
 .housingBanner {
   position: relative;
   margin: 0 6.9% 30px 6.9%;
-  display: flex;
 }
 .housingBanner__arrowNext {
   position: absolute;
-  top: 50%;
-  right: 5px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  top: 40%;
+  right: 20px;
 }
 .housingBanner__arrowPrev {
   position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.housingBanner__slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+  top: 40%;
+  left: 20px;
 }
 .housingBanner__slide__img {
   height: 415px;
@@ -38,13 +19,6 @@
      object-fit: cover;
   border-radius: 25px;
 }
-.housingBanner__slide.inactive {
-  display: none;
-}
 .housingBanner__slide.active {
-  opacity: 1;
-  padding: 17px 40px 13px 40px;
-  transition-duration: 1s;
-  transform: scale(1.08);
   width: 100%;
 }/*# sourceMappingURL=housingBanner.css.map */
