@@ -2,24 +2,34 @@
   position: relative;
   margin: 0 6.9% 0 6.9%;
 }
+@media screen and (max-width: 376px) {
+  .banner {
+    margin: 0 20px 0 20px;
+  }
+}
 .banner__container {
   position: relative;
   overflow: hidden;
-  width: 100%;
   height: 227px;
   border-radius: 25px;
+}
+@media screen and (max-width: 376px) {
+  .banner__container {
+    height: 111px;
+  }
+  .banner__container-about {
+    height: 223px;
+  }
 }
 .banner__container:before {
   content: "";
   position: absolute;
   background: #000;
-  mix-blend-mode: darken;
   opacity: 0.3;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
 }
 .banner__container__img {
   width: 100%;
@@ -38,5 +48,13 @@
   justify-content: center;
   font-size: 3em;
   color: #fff;
-  z-index: 2;
+}
+@media screen and (max-width: 376px) {
+  .banner__paragraph {
+    display: initial;
+    font-size: 24px;
+    top: 31px;
+    left: 16px;
+    right: 102px;
+  }
 }/*# sourceMappingURL=banner.css.map */

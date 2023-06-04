@@ -1,20 +1,35 @@
 .housingBanner 
     position: relative
     margin: 0 6.9% 30px 6.9%
+    @media screen and (max-width: 376px)
+        margin: 0 20px 15px 20px
     &__arrowNext 
         position: absolute
         top: 40%
         right: 20px
+        @media screen and (max-width: 376px)
+            width: 12px
+            height: 20px
+            top: 45%
+            right: 6px
     &__arrowPrev
         position: absolute
         top: 40%
         left: 20px
+        @media screen and (max-width: 376px)
+            width: 12px
+            height: 20px
+            top: 45%
+            left: 6px
     &__slide
         &__img 
             height: 415px
             width: 100%
             object-fit: cover
             border-radius: 25px
+            @media screen and (max-width: 376px)
+                width: 335px
+                height: 255px
     &__slide.inactive
     &__slide.active
         width: 100%

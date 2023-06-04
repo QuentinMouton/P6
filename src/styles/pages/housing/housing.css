@@ -1,3 +1,7 @@
+.housing {
+  max-width: 1440px;
+  margin: auto;
+}
 .housing__TagsRate {
   display: flex;
   justify-content: space-between;

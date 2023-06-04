@@ -9,7 +9,7 @@
   transition: max-height 500ms ease-out;
 }
 .collapse .opened {
-  max-height: 140px;
+  max-height: 150px;
   transition: max-height 500ms ease-in;
 }
 .collapse .closed, .collapse .opened {
@@ -28,6 +28,13 @@
   background-color: #ff6060;
   color: #fff;
   font-size: 24px;
+}
+@media screen and (max-width: 376px) {
+  .collapse__container {
+    width: 305px;
+    height: 14px;
+    font-size: 13px;
+  }
 }
 .collapse__container__arrow {
   width: 24px;

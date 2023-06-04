@@ -33,10 +33,10 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 /** end reset css**/
 h1, h2, a, p, span, li {
+  font-size: unset;
   font-family: "Montserrat", sans-serif;
 }
 
 #root {
   margin: auto;
-  max-width: 1440px;
 }/*# sourceMappingURL=style.css.map */

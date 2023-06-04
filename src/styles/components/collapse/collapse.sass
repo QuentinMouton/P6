@@ -1,6 +1,5 @@
 .collapse
     margin: 0 8.8% 0 8.8%
-
     font-size: 17px
     line-height: 142.6%
     color: #ff6060
@@ -8,7 +7,7 @@
         max-height: 0
         transition: max-height 500ms ease-out
     & .opened
-        max-height: 140px
+        max-height: 150px
         transition: max-height 500ms ease-in
     & .closed, & .opened
         overflow: hidden
@@ -25,6 +24,10 @@
         background-color: #ff6060
         color: #fff
         font-size: 24px
+        @media screen and (max-width: 376px)
+            width: 305px
+            height: 14px
+            font-size: 13px
         &__arrow
             width: 24px
             height: 14px

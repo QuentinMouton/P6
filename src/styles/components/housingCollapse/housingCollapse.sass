@@ -2,8 +2,15 @@
     display: flex
     justify-content: space-between
     margin: 0 6.9% 0 6.9%
+    @media screen and (max-width: 376px)
+        flex-direction: column
     &__container
         width: 43%
+        @media screen and (max-width: 376px)
+            width: 100%
+        &__equip
+            @media screen and (max-width: 376px)
+                margin-top: 20px
         &__desc, &__equip
             display: flex
             justify-content: space-between
@@ -13,6 +20,7 @@
             color: #fff
             background: #FF6060
             font-size: 24px
+            @media screen and (max-width: 376px)
         &__text
             margin-bottom: 5px
             padding: 0 20px 0 20px
@@ -25,7 +33,7 @@
             max-height: 0
             transition: max-height 500ms ease-out
         & .opened
-            max-height: 300px
+            max-height: 500px
             transition: max-height 500ms ease-in
         & .closed, & .opened
             overflow: hidden
