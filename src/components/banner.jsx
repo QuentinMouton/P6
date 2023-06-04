@@ -1,11 +1,18 @@
+import { useLocation } from 'react-router-dom'
+
 import '../styles/components/banner/banner.css'
 
-import images from '../assets/bannerHome.webp'
-
 const Banner = (props) => {
+  const location = useLocation()
   return (
     <div key={props.index} className="banner">
-      <div className="banner__container">
+      <div
+        className={
+          location.pathname === '/about'
+            ? 'banner__container banner__container-about'
+            : 'banner__container'
+        }
+      >
         <img
           className="banner__container__img"
           src={props.imgSrc}

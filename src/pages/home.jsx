@@ -1,11 +1,9 @@
-import { useLocation } from 'react-router-dom'
-
 import Banner from '../components/banner'
 import Gallery from '../components/gallery'
 
 import '../styles/pages/home/home.css'
 
-import BannerHome from '../assets/bannerHome.webp'
+import BannerHome from '../assets/bannerHome.png'
 
 const Home = () => {
   const BannerImgHome = [

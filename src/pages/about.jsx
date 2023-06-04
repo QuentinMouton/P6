@@ -1,7 +1,9 @@
 import Banner from '../components/banner'
 import GalleryCollapse from '../components/galleryCollapse'
 
-import BannerAbout from '../assets/bannerAbout.webp'
+import '../styles/pages/about/about.css'
+
+import BannerAbout from '../assets/bannerAbout.png'
 
 const About = () => {
   const BannerImgAbout = [
