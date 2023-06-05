@@ -8,7 +8,6 @@ import arrowPrev from '../assets/arrowPrevious.png'
 const HousingBanner = (props) => {
   const [current, setCurrent] = useState(0)
   const length = props.data.length
-
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
   }
@@ -29,6 +28,9 @@ const HousingBanner = (props) => {
         alt=""
         onClick={nextSlide}
       />
+      <span className="housingBanner__counter">
+        {current + 1}/{props.data.length}
+      </span>
       {props.data.map((slide, index) => {
         return (
           <div
