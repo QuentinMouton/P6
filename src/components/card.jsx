@@ -9,6 +9,7 @@ const Card = (props) => {
     <div className="card">
       <Link key={props.id} to={`/housing/${props.id}`}>
         <div className="card__container">
+          {/* <p>{`/housing/${props.id}`}</p> */}
           <img
             className="card__container__img"
             src={props.cover}

@@ -15,20 +15,20 @@ const HousingBanner = (props) => {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
   return (
-    <section className="housingBanner">
+    <section className="housing__banner">
       <img
-        className="housingBanner__arrowPrev"
+        className="housing__banner__arrowPrev"
         src={arrowPrev}
         alt=""
         onClick={prevSlide}
       />
       <img
-        className="housingBanner__arrowNext"
+        className="housing__banner__arrowNext"
         src={arrowNext}
         alt=""
         onClick={nextSlide}
       />
-      <span className="housingBanner__counter">
+      <span className="housing__banner__counter">
         {current + 1}/{props.data.length}
       </span>
       {props.data.map((slide, index) => {
@@ -36,13 +36,13 @@ const HousingBanner = (props) => {
           <div
             className={
               index === current
-                ? 'housingBanner__slide active'
-                : 'housingBanner__slide inactive'
+                ? 'housing__banner__slide active'
+                : 'housing__banner__slide inactive'
             }
             key={index}
           >
             {index === current && (
-              <img className="housingBanner__slide__img" src={slide} alt="" />
+              <img className="housing__banner__slide__img" src={slide} alt="" />
             )}
           </div>
         )
@@ -51,7 +51,3 @@ const HousingBanner = (props) => {
   )
 }
 export default HousingBanner
-
-// <div className="carousel">
-//   <img src={props.imgSrc} alt={`${props.title}`} />
-// </div>

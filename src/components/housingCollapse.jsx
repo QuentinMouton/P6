@@ -14,15 +14,15 @@ const HousingCollapse = (props) => {
     })
   }
   return (
-    <div className="housingCollapse">
-      <div className="housingCollapse__container">
-        <div className="housingCollapse__container__desc">
+    <div className="housing__collapse">
+      <div className="housing__collapse__container">
+        <div className="housing__collapse__container__desc">
           <h2>Déscription</h2>
           <img
             className={
               divState[0]
-                ? 'housingCollapse__container__arrow actived'
-                : 'housingCollapse__container__arrow '
+                ? 'housing__collapse__container__arrow actived'
+                : 'housing__collapse__container__arrow '
             }
             src={arrowDown}
             alt=""
@@ -32,8 +32,8 @@ const HousingCollapse = (props) => {
         <div
           className={
             divState[0]
-              ? 'housingCollapse__container__text opened'
-              : 'housingCollapse__container__text closed'
+              ? 'housing__collapse__container__text opened'
+              : 'housing__collapse__container__text closed'
           }
         >
           <br />
@@ -41,14 +41,14 @@ const HousingCollapse = (props) => {
           <br />
         </div>
       </div>
-      <div className="housingCollapse__container">
-        <div className="housingCollapse__container__equip">
+      <div className="housing__collapse__container">
+        <div className="housing__collapse__container__equip">
           <h2>Équipements</h2>
           <img
             className={
               divState[1]
-                ? 'housingCollapse__container__arrow actived'
-                : 'housingCollapse__container__arrow '
+                ? 'housing__collapse__container__arrow actived'
+                : 'housing__collapse__container__arrow '
             }
             src={arrowDown}
             alt=""
@@ -58,8 +58,8 @@ const HousingCollapse = (props) => {
         <div
           className={
             divState[1]
-              ? 'housingCollapse__container__text opened'
-              : 'housingCollapse__container__text closed'
+              ? 'housing__collapse__container__text opened'
+              : 'housing__collapse__container__text closed'
           }
         >
           <br />

@@ -3,7 +3,6 @@ import { HousingList } from '../datas/housingList'
 
 import HousingBanner from '../components/housingBanner'
 import HousingHost from '../components/housingHost'
-import HousingTags from '../components/housingTags'
 import HousingRate from '../components/housingRate'
 import HousingCollapse from '../components/housingCollapse'
 
@@ -14,20 +13,18 @@ const Housing = () => {
   const housing = HousingList.find((housing) => housing.id === id)
   return (
     <div className="housing">
-      <HousingBanner data={housing.pictures} img={HousingList.pictures} />
-      <HousingHost
-        title={housing.title}
-        location={housing.location}
-        name={housing.host.name}
-        imgSrc={housing.host.picture}
-      />
-      <div className="housing__TagsRate">
-        <ul className="tags">
-          {housing.tags.map((e, index) => (
-            <HousingTags key={index} tags={e} />
-          ))}
-        </ul>
-        <HousingRate rate={housing.rating} />
+      <HousingBanner data={housing.pictures} />
+      <div className="housing__host">
+        <HousingHost
+          title={housing.title}
+          location={housing.location}
+          tags={housing.tags}
+        />
+        <HousingRate
+          rate={housing.rating}
+          name={housing.host.name}
+          imgSrc={housing.host.picture}
+        />
       </div>
       <HousingCollapse
         id={housing.id}
