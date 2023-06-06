@@ -4,4 +4,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 6.9% 0 6.9%;
+}
+@media screen and (max-width: 450px) {
+  .gallery__collapse {
+    margin: 0 20px 0 20px;
+  }
 }/*# sourceMappingURL=galleryCollapse.css.map */

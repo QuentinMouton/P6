@@ -8,7 +8,7 @@
   height: 180px;
   margin-top: 50px;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .footer {
     height: 209px;
     margin-top: 27px;
@@ -20,7 +20,7 @@
 .footer__paragraph {
   margin-bottom: 29px;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .footer__paragraph {
     font-size: 12px;
     text-align: center;

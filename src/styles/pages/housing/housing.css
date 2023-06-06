@@ -2,15 +2,13 @@
   max-width: 1440px;
   margin: auto;
 }
-.housing__TagsRate {
+.housing__host {
   display: flex;
   justify-content: space-between;
-  margin: 15px 6.9% 25px 6.9%;
+  margin: 15px 6.9% 15px 6.9%;
 }
-
-.tags {
-  display: flex;
-  list-style: none;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+@media screen and (max-width: 775px) {
+  .housing__host {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=housing.css.map */

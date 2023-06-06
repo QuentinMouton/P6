@@ -1,11 +1,9 @@
 .housing
     max-width: 1440px
     margin: auto
-    &__TagsRate
+    &__host
         display: flex
         justify-content: space-between
-        margin: 15px 6.9% 25px 6.9%
-.tags
-    display: flex
-    list-style: none
-    padding-inline-start: 0
+        margin: 15px 6.9% 15px 6.9%
+        @media screen and (max-width: 775px)
+            flex-direction: column

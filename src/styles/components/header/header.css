@@ -4,12 +4,12 @@
   align-items: center;
   margin: 45px 6.9% 50px 6.9%;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 430px) {
   .header {
-    margin: 20px 20px 27px 20px;
+    margin: 20px 5.3% 27px 5.3%;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 700px) {
   .header__logo img {
     height: 47px;
   }
@@ -19,7 +19,7 @@
   font-size: 24px;
   display: flex;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 600px) {
   .header__navbar {
     font-size: 12px;
     text-transform: uppercase;
@@ -33,8 +33,8 @@
   margin-left: 45px;
   display: block;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 600px) {
   .header__navbar__link {
-    margin-left: 26px;
+    margin-left: 20px;
   }
 }/*# sourceMappingURL=header.css.map */

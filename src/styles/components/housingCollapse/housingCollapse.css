@@ -1,27 +1,27 @@
-.housingCollapse {
+.housing__collapse {
   display: flex;
   justify-content: space-between;
   margin: 0 6.9% 0 6.9%;
 }
-@media screen and (max-width: 376px) {
-  .housingCollapse {
+@media screen and (max-width: 650px) {
+  .housing__collapse {
     flex-direction: column;
   }
 }
-.housingCollapse__container {
+.housing__collapse__container {
   width: 43%;
 }
-@media screen and (max-width: 376px) {
-  .housingCollapse__container {
+@media screen and (max-width: 650px) {
+  .housing__collapse__container {
     width: 100%;
   }
 }
-@media screen and (max-width: 376px) {
-  .housingCollapse__container__equip {
+@media screen and (max-width: 450px) {
+  .housing__collapse__container__equip {
     margin-top: 20px;
   }
 }
-.housingCollapse__container__desc, .housingCollapse__container__equip {
+.housing__collapse__container__desc, .housing__collapse__container__equip {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +31,12 @@
   background: #FF6060;
   font-size: 24px;
 }
-.housingCollapse__container__text {
+@media screen and (max-width: 650px) {
+  .housing__collapse__container__desc, .housing__collapse__container__equip {
+    font-size: 13px;
+  }
+}
+.housing__collapse__container__text {
   margin-bottom: 5px;
   padding: 0 20px 0 20px;
   border-radius: 0 0 5px 5px;
@@ -40,22 +45,38 @@
   color: #ff6060;
   background: #F6F6F6;
 }
-.housingCollapse__container .closed {
+@media screen and (max-width: 900px) {
+  .housing__collapse__container__text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .housing__collapse__container__text {
+    font-size: 12px;
+  }
+}
+.housing__collapse__container .closed {
   max-height: 0;
   transition: max-height 500ms ease-out;
 }
-.housingCollapse__container .opened {
+.housing__collapse__container .opened {
   max-height: 500px;
   transition: max-height 500ms ease-in;
 }
-.housingCollapse__container .closed, .housingCollapse__container .opened {
+.housing__collapse__container .closed, .housing__collapse__container .opened {
   overflow: hidden;
 }
-.housingCollapse__container__arrow {
+.housing__collapse__container__arrow {
   width: 24px;
   height: 14px;
   transition: transform 400ms;
 }
-.housingCollapse__container__arrow.actived {
+@media screen and (max-width: 650px) {
+  .housing__collapse__container__arrow {
+    width: 16px;
+    height: 10px;
+  }
+}
+.housing__collapse__container__arrow.actived {
   transform: rotate(0.5turn);
-}/*# sourceMappingURL=housingCollapse.css.map */
+}

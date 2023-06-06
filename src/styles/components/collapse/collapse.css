@@ -4,12 +4,17 @@
   line-height: 142.6%;
   color: #ff6060;
 }
+@media screen and (max-width: 450px) {
+  .collapse {
+    margin: 0;
+  }
+}
 .collapse .closed {
   max-height: 0;
   transition: max-height 500ms ease-out;
 }
 .collapse .opened {
-  max-height: 150px;
+  max-height: 300px;
   transition: max-height 500ms ease-in;
 }
 .collapse .closed, .collapse .opened {
@@ -29,9 +34,8 @@
   color: #fff;
   font-size: 24px;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .collapse__container {
-    width: 305px;
     height: 14px;
     font-size: 13px;
   }

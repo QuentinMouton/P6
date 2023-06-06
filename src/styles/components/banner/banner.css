@@ -2,7 +2,7 @@
   position: relative;
   margin: 0 6.9% 0 6.9%;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 650px) {
   .banner {
     margin: 0 20px 0 20px;
   }
@@ -13,7 +13,7 @@
   height: 227px;
   border-radius: 25px;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .banner__container {
     height: 111px;
   }
@@ -49,12 +49,21 @@
   font-size: 3em;
   color: #fff;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 700px) {
+  .banner__paragraph {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .banner__paragraph {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
   .banner__paragraph {
     display: initial;
-    font-size: 24px;
     top: 31px;
-    left: 16px;
+    left: 20px;
     right: 102px;
   }
 }/*# sourceMappingURL=banner.css.map */

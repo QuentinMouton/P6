@@ -1,55 +1,73 @@
-.housingHost {
+.housing__locationTags {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 0 6.9% 0 6.9%;
   color: #FF6060;
 }
-@media screen and (max-width: 376px) {
-  .housingHost {
+@media screen and (max-width: 400px) {
+  .housing__locationTags {
     flex-direction: column;
-    margin: 0 20px 0 20px;
   }
 }
-.housingHost__title {
-  width: 600px;
+.housing__locationTags__title {
+  max-width: 600px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 376px) {
-  .housingHost__title {
+@media screen and (max-width: 400px) {
+  .housing__locationTags__title {
     width: 335px;
   }
 }
-.housingHost__title__h1 {
+.housing__locationTags__title__h1 {
   font-size: 36px;
   margin-bottom: 8px;
   line-height: 142.6%;
 }
-@media screen and (max-width: 376px) {
-  .housingHost__title__h1 {
+@media screen and (max-width: 650px) {
+  .housing__locationTags__title__h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .housing__locationTags__title__h1 {
     font-size: 18px;
   }
 }
-.housingHost__title__city {
+.housing__locationTags__title__city {
   height: 26px;
   font-size: 18px;
 }
-@media screen and (max-width: 376px) {
-  .housingHost__title__city {
+@media screen and (max-width: 400px) {
+  .housing__locationTags__title__city {
     height: 22px;
     font-size: 14px;
     width: 100%;
   }
 }
-.housingHost__identity {
+.housing__locationTags__tags {
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
-.housingHost__identity__name {
-  width: 93px;
-  padding: 13px 10px 0 0;
-  font-size: 18px;
-  text-align: right;
+.housing__locationTags__tags__list {
+  color: #fff;
+  background: #FF6060;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  width: 160px;
+  text-align: center;
+  margin: 0 10px 10px 0;
 }
-.housingHost__identity__img {
-  width: 64px;
-  height: 64px;
-  border-radius: 30px;
+@media screen and (max-width: 870px) {
+  .housing__locationTags__tags__list {
+    width: 140px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .housing__locationTags__tags__list {
+    width: 120px;
+    font-size: 10px;
+    padding: 5px;
+  }
 }/*# sourceMappingURL=housingHost.css.map */
