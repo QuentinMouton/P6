@@ -39,4 +39,7 @@ h1, h2, a, p, span, li {
 
 #root {
   margin: auto;
-}/*# sourceMappingURL=style.css.map */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
