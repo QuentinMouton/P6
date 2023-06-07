@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 400px) {
   .housing__locationTags__title {
-    width: 335px;
+    max-width: 335px;
   }
 }
 .housing__locationTags__title__h1 {

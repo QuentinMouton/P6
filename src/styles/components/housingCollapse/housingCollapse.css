@@ -16,7 +16,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   .housing__collapse__container__equip {
     margin-top: 20px;
   }
