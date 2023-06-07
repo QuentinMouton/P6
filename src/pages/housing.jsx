@@ -6,11 +6,16 @@ import HousingHost from '../components/housingHost'
 import HousingRate from '../components/housingRate'
 import HousingCollapse from '../components/housingCollapse'
 
+import Error from './error'
+
 import '../styles/pages/housing/housing.css'
 
 const Housing = () => {
   const { id } = useParams()
   const housing = HousingList.find((housing) => housing.id === id)
+  if (!housing) {
+    return <Error />
+  }
   return (
     <div className="housing">
       <HousingBanner data={housing.pictures} />
