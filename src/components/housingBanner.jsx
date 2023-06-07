@@ -16,21 +16,27 @@ const HousingBanner = (props) => {
   }
   return (
     <section className="housing__banner">
-      <img
-        className="housing__banner__arrowPrev"
-        src={arrowPrev}
-        alt=""
-        onClick={prevSlide}
-      />
-      <img
-        className="housing__banner__arrowNext"
-        src={arrowNext}
-        alt=""
-        onClick={nextSlide}
-      />
-      <span className="housing__banner__counter">
-        {current + 1}/{props.data.length}
-      </span>
+      {length > 1 && (
+        <img
+          className="housing__banner__arrowPrev"
+          src={arrowPrev}
+          alt="Fleche précédente"
+          onClick={prevSlide}
+        />
+      )}
+      {length > 1 && (
+        <img
+          className="housing__banner__arrowNext"
+          src={arrowNext}
+          alt="Fleche suivante"
+          onClick={nextSlide}
+        />
+      )}
+      {length > 1 && (
+        <span className="housing__banner__counter">
+          {current + 1}/{props.data.length}
+        </span>
+      )}
       {props.data.map((slide, index) => {
         return (
           <div
