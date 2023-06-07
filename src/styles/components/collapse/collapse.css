@@ -4,9 +4,15 @@
   line-height: 142.6%;
   color: #ff6060;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .collapse {
     margin: 0;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .collapse {
+    font-size: 13px;
   }
 }
 .collapse .closed {
@@ -14,7 +20,7 @@
   transition: max-height 500ms ease-out;
 }
 .collapse .opened {
-  max-height: 300px;
+  max-height: 500px;
   transition: max-height 500ms ease-in;
 }
 .collapse .closed, .collapse .opened {
@@ -34,6 +40,11 @@
   color: #fff;
   font-size: 24px;
 }
+@media screen and (max-width: 600px) {
+  .collapse__container {
+    font-size: 19px;
+  }
+}
 @media screen and (max-width: 450px) {
   .collapse__container {
     height: 14px;
@@ -47,4 +58,4 @@
 }
 .collapse__container .active {
   transform: rotate(0.5turn);
-}/*# sourceMappingURL=collapse.css.map */
+}
