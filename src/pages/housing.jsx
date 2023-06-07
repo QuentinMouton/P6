@@ -16,6 +16,7 @@ const Housing = () => {
       <HousingBanner data={housing.pictures} />
       <div className="housing__host">
         <HousingHost
+          id={housing.id}
           title={housing.title}
           location={housing.location}
           tags={housing.tags}
@@ -27,7 +28,6 @@ const Housing = () => {
         />
       </div>
       <HousingCollapse
-        id={housing.id}
         description={housing.description}
         equipments={housing.equipments}
       />

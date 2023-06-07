@@ -8,8 +8,13 @@ const HousingHost = (props) => {
         <p className="housing__locationTags__title__city">{props.location}</p>
       </div>
       <ul className="housing__locationTags__tags">
-        {props.tags.map((e) => (
-          <p className="housing__locationTags__tags__list">{e}</p>
+        {props.tags.map((e, index) => (
+          <p
+            className="housing__locationTags__tags__list"
+            key={`${props.id}-${index}`}
+          >
+            {e}
+          </p>
         ))}
       </ul>
     </div>
