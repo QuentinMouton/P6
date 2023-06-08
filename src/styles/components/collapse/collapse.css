@@ -54,8 +54,10 @@
 .collapse__container__arrow {
   width: 24px;
   height: 14px;
-  transition: transform 400ms;
+}
+.collapse__container .inactive {
+  transform: rotate(0.5turn);
 }
 .collapse__container .active {
-  transform: rotate(0.5turn);
+  transition: transform 400ms;
 }
