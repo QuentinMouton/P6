@@ -5,6 +5,8 @@ import '../styles/pages/home/home.css'
 
 import BannerHome from '../assets/bannerHome.png'
 
+// Création de la page "home"
+// Affiche les composants "banner" et "gallery"
 const Home = () => {
   const BannerImgHome = [
     {

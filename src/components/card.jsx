@@ -1,15 +1,15 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import '../styles/components/card/card.css'
 
+//Création du composent qui gère les cartes
+// Page "home"
 const Card = (props) => {
-  const { idParam } = useParams()
-
   return (
     <div className="card">
+      {/* Création du lien vers le logement grâce à son id */}
       <Link key={props.id} to={`/housing/${props.id}`}>
         <div className="card__container">
-          {/* <p>{`/housing/${props.id}`}</p> */}
           <img
             className="card__container__img"
             src={props.cover}

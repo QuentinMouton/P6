@@ -10,9 +10,14 @@ import Error from './error'
 
 import '../styles/pages/housing/housing.css'
 
+// Création de la page "housing"
+// Affiche les composants "housingBanner", "housingHost", "housingRate", "housingCollapse"
 const Housing = () => {
+  // Création d'une variable "id" qui récupère la valeur ID dans l'URL
   const { id } = useParams()
+  // Création d'une variable "housing" qui cherche l'id correspondant à la variable "id"
   const housing = HousingList.find((housing) => housing.id === id)
+  //Si la variable "housing" est falsy renvoi à la page "error"
   if (!housing) {
     return <Error />
   }

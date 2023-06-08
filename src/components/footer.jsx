@@ -2,6 +2,8 @@ import '../styles/components/footer/footer.css'
 
 import logo from '../assets/logoFoot.svg'
 
+//Création du composant qui gère le footer
+// Toutes les pages
 const Footer = () => {
   return (
     <footer className="footer">

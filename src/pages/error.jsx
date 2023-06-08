@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 
 import '../styles/pages/error/error.css'
 
+// Création de la page "error"
 const Error = () => {
   return (
     <div className="error">

@@ -1,5 +1,7 @@
 import '../styles/components/housingHost/housingHost.css'
 
+// Création du composant qui gère le titre, le lieux et les tags
+//Page "housing"
 const HousingHost = (props) => {
   return (
     <div className="housing__locationTags">
@@ -8,6 +10,8 @@ const HousingHost = (props) => {
         <p className="housing__locationTags__title__city">{props.location}</p>
       </div>
       <ul className="housing__locationTags__tags">
+        {/* Itération du tableau contenu dans
+        la props "tags" et affiche chaque element */}
         {props.tags.map((e, index) => (
           <p
             className="housing__locationTags__tags__list"

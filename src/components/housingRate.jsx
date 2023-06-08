@@ -3,8 +3,12 @@ import '../styles/components/housingRate/housingRate.css'
 import starRed from '../assets/starRed.png'
 import star from '../assets/star.png'
 
+// Création du composant qui gère l'identité et la note
 const HousingRate = (props) => {
+  // Création d'une variable qui stock la note
   const count = props.rate
+  /*Création d'une fonction qui convertit la note /5
+  en étoiles rouge et comble avec des étoiles grise*/
   const rates = () => {
     const allStars = []
     for (let i = 0; i < count; i++) {
@@ -13,7 +17,7 @@ const HousingRate = (props) => {
           key={i}
           className="housing__identityRate__rate__img"
           src={starRed}
-          alt=""
+          alt="étoile rouge"
         />
       )
     }
@@ -23,7 +27,7 @@ const HousingRate = (props) => {
           key={`${allStars.length}`}
           className="housing__identityRate__rate__img"
           src={star}
-          alt=""
+          alt="étoile grise"
         />
       )
     }

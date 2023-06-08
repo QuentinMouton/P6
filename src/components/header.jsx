@@ -4,7 +4,10 @@ import '../styles/components/header/header.css'
 
 import logo from '../assets/logoHead.svg'
 
+//Création du composant qui gère le header
+//Toutes les pages
 const Header = () => {
+  //Création d'une variable qui permet d'acceder aux infos de l'URL
   const location = useLocation()
   return (
     <header className="header">
@@ -15,6 +18,8 @@ const Header = () => {
         <li>
           <Link
             className={
+              /* Ajout de la class "active" si 
+              l'URL correspond à "/" */
               location.pathname === '/'
                 ? 'active header__navbar__link'
                 : 'header__navbar__link'
@@ -27,6 +32,8 @@ const Header = () => {
         <li>
           <Link
             className={
+              /* Ajout de la class "active" si 
+              l'URL correspond à "/about" */
               location.pathname === '/about'
                 ? 'active header__navbar__link'
                 : 'header__navbar__link'

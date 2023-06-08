@@ -4,6 +4,8 @@ import Card from './card'
 
 import '../styles/components/gallery/gallery.css'
 
+// Création du composant qui gère la galerie qui contient le composant "card"
+//Page "home"
 const Gallery = () => {
   return (
     <div className="gallery">
