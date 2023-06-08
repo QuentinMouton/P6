@@ -6,7 +6,7 @@ import '../styles/pages/about/about.css'
 import BannerAbout from '../assets/bannerAbout.png'
 
 // Création de la page "about"
-// Affiche les composants "Banner" et "GalleryCollapse"
+// Affiche les composants "banner" et "galleryCollapse"
 const About = () => {
   const BannerImgAbout = [
     {
