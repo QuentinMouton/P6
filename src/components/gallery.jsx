@@ -2,7 +2,7 @@ import { HousingList } from '../datas/housingList'
 
 import Card from './card'
 
-import '../styles/components/gallery/gallery.css'
+import '../styles/components/gallery/gallery.sass'
 
 // Création du composant qui gère la galerie qui contient le composant "card"
 //Page "home"

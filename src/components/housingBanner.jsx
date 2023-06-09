@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import '../styles/components/housingBanner/housingBanner.css'
+import '../styles/components/housingBanner/housingBanner.sass'
 
 import arrowNext from '../assets/arrowNext.png'
 import arrowPrev from '../assets/arrowPrevious.png'

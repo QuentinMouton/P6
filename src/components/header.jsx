@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 
-import '../styles/components/header/header.css'
+import '../styles/components/header/header.sass'
 
 import logo from '../assets/logoHead.svg'
 

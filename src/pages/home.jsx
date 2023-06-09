@@ -1,7 +1,7 @@
 import Banner from '../components/banner'
 import Gallery from '../components/gallery'
 
-import '../styles/pages/home/home.css'
+import '../styles/pages/home/home.sass'
 
 import BannerHome from '../assets/bannerHome.png'
 

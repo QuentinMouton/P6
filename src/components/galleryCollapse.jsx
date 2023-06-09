@@ -1,7 +1,7 @@
 import { textCollapse } from '../datas/textCollapse'
 import Collapse from './collapse'
 
-import '../styles/components/galleryCollapse/galleryCollapse.css'
+import '../styles/components/galleryCollapse/galleryCollapse.sass'
 
 // Création du composant qui gère la galerie qui contient le composant "collapse"
 //Page "about"

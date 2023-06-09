@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import '../styles/components/housingCollapse/housingCollapse.css'
+import '../styles/components/housingCollapse/housingCollapse.sass'
 
 import arrowDown from '../assets/arrowDown.png'
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import '../styles/components/card/card.css'
+import '../styles/components/card/card.sass'
 
 //Création du composent qui gère les cartes
 // Page "home"

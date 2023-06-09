@@ -1,7 +1,7 @@
 import Banner from '../components/banner'
 import GalleryCollapse from '../components/galleryCollapse'
 
-import '../styles/pages/about/about.css'
+import '../styles/pages/about/about.sass'
 
 import BannerAbout from '../assets/bannerAbout.png'
 

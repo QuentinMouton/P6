@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 
-import '../styles/components/banner/banner.css'
+import '../styles/components/banner/banner.sass'
 
 //Création du composent qui gère les bannières
 //Pages "home" et "about"

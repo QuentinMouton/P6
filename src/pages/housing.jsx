@@ -8,7 +8,7 @@ import HousingCollapse from '../components/housingCollapse'
 
 import Error from './error'
 
-import '../styles/pages/housing/housing.css'
+import '../styles/pages/housing/housing.sass'
 
 // Création de la page "housing"
 // Affiche les composants "housingBanner", "housingHost", "housingRate", "housingCollapse"

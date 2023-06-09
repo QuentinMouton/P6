@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import '../styles/pages/error/error.css'
+import '../styles/pages/error/error.sass'
 
 // Création de la page "error"
 const Error = () => {

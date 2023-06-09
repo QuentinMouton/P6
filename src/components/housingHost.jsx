@@ -1,4 +1,4 @@
-import '../styles/components/housingHost/housingHost.css'
+import '../styles/components/housingHost/housingHost.sass'
 
 // Création du composant qui gère le titre, le lieux et les tags
 //Page "housing"

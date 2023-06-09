@@ -1,4 +1,4 @@
-import '../styles/components/footer/footer.css'
+import '../styles/components/footer/footer.sass'
 
 import logo from '../assets/logoFoot.svg'
 

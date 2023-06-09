@@ -1,4 +1,4 @@
-import '../styles/components/housingRate/housingRate.css'
+import '../styles/components/housingRate/housingRate.sass'
 
 import starRed from '../assets/starRed.png'
 import star from '../assets/star.png'
