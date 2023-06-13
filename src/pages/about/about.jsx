@@ -8,17 +8,9 @@ import BannerAbout from '../../assets/bannerAbout.png'
 // Création de la page "about"
 // Affiche les composants "banner" et "galleryCollapse"
 const About = () => {
-  const BannerImgAbout = [
-    {
-      src: BannerAbout,
-      alt: 'Banner About',
-    },
-  ]
   return (
     <div className="about">
-      {BannerImgAbout.map((e) => (
-        <Banner key={`${e.src}-${e.alt}`} imgSrc={e.src} alt={e.alt} />
-      ))}
+      <Banner imgSrc={BannerAbout} class=" img-about" alt="Banner about" />
       <GalleryCollapse />
     </div>
   )

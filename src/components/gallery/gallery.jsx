@@ -1,4 +1,4 @@
-import { HousingList } from '../../datas/housingList'
+import { HousingList } from '../../data/housingList'
 
 import Card from '../card/card'
 

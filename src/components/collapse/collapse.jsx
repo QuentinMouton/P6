@@ -4,9 +4,6 @@ import './collapse.sass'
 
 import arrowDown from '../../assets/arrowDown.png'
 
-//Création du composant qui gère les collapses
-//Composent "galleryCollapse"
-//Page "about"
 const Collapse = (props) => {
   /*Création d'une variable "isClicked" initialisée à "false" et 
   fournit une fonction "setIsClicked" pour mettre à jour la variable*/
@@ -15,13 +12,13 @@ const Collapse = (props) => {
   const handleClick = () => setIsClicked(!isClicked)
 
   return (
-    <div className="collapse">
+    <div className={props.class + ' ' + 'collapse'}>
       <div className="collapse__container">
         <h2>{props.label}</h2>
         <img
           className={
             /* Change la class "inactive" par
-            "active" lors du click sur la flèche */
+        "active" lors du click sur la flèche */
             isClicked
               ? 'collapse__container__arrow active'
               : 'collapse__container__arrow inactive'
@@ -38,7 +35,7 @@ const Collapse = (props) => {
         }
       >
         <br />
-        <p>{props.text}</p>
+        {props.text}
         <br />
       </div>
     </div>

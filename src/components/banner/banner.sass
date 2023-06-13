@@ -1,3 +1,6 @@
+.img-about
+    @media screen and (max-width: 450px)
+        height: 223px!important
 .banner
     position: relative
     margin: 0 6.9% 0 6.9%
@@ -10,8 +13,6 @@
         border-radius: 25px
         @media screen and (max-width: 450px)
             height: 111px
-            &-about
-                height: 223px
         &:before 
             content: ''
             position: absolute
@@ -36,12 +37,15 @@
         justify-content: center
         font-size: 3em
         color: #fff
-        @media screen and (max-width: 700px)
+        @media screen and (max-width: 850px)
             font-size: 36px
-        @media screen and (max-width: 550px)
+        @media screen and (max-width: 600px)
             font-size: 30px
+        @media screen and (max-width: 500px)
+            font-size: 24px
         @media screen and (max-width: 400px)
             display: initial
+            font-size: 23px
             top: 31px
             left: 20px
             right: 102px

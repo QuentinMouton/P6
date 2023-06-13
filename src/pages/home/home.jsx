@@ -8,24 +8,10 @@ import BannerHome from '../../assets/bannerHome.png'
 // Création de la page "home"
 // Affiche les composants "banner" et "gallery"
 const Home = () => {
-  const BannerImgHome = [
-    {
-      title: 'Chez vous, partout et ailleurs',
-      src: BannerHome,
-      alt: 'Banner Home',
-    },
-  ]
+  const title = 'Chez vous, partout et ailleurs'
   return (
     <div className="home">
-      {BannerImgHome.map((e) => (
-        <Banner
-          key={`${e.src}-${e.alt}`}
-          title={e.title}
-          imgSrc={e.src}
-          alt={e.alt}
-        />
-      ))}
-
+      <Banner title={title} imgSrc={BannerHome} class="" alt="Banner Home" />
       <Gallery />
     </div>
   )

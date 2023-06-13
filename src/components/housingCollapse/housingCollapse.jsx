@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './housingCollapse.sass'
 
 import arrowDown from '../../assets/arrowDown.png'
+import Collapse from '../collapse/collapse'
 
 // Création du composent qui gère les collapses
 //Page "housing"
@@ -22,7 +23,7 @@ const HousingCollapse = (props) => {
   return (
     <div className="housing__collapse">
       <div className="housing__collapse__container">
-        <div className="housing__collapse__container__desc">
+        {/* <div className="housing__collapse__container__desc">
           <h2>Déscription</h2>
           <img
             className={
@@ -35,11 +36,12 @@ const HousingCollapse = (props) => {
             alt=""
             onClick={() => toggle(0)}
           />
-        </div>
-        <div
+        </div> */}
+        <Collapse />
+        {/* <div
           className={
-            /* Change la class "closed" en "opened"
-              lors du changement d'image du carousel */
+            // Change la class "closed" en "opened"
+            //  lors du changement d'image du carousel 
             divState[0]
               ? 'housing__collapse__container__text opened'
               : 'housing__collapse__container__text closed'
@@ -48,7 +50,7 @@ const HousingCollapse = (props) => {
           <br />
           <p>{props.description}</p>
           <br />
-        </div>
+        </div> */}
       </div>
       <div className="housing__collapse__container">
         <div className="housing__collapse__container__equip">

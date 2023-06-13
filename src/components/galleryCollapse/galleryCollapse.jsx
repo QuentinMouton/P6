@@ -1,4 +1,4 @@
-import { textCollapse } from '../../datas/textCollapse'
+import { textCollapse } from '../../data/textCollapse'
 import Collapse from '../collapse/collapse'
 
 import './galleryCollapse.sass'
@@ -12,7 +12,7 @@ const GalleryCollapse = () => {
         <Collapse
           key={`${e.label}-${e.content}`}
           label={e.label}
-          text={e.content}
+          text={<p>{e.content}</p>}
         />
       ))}
     </div>

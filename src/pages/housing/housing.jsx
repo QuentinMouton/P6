@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom'
-import { HousingList } from '../../datas/housingList'
+import { HousingList } from '../../data/housingList'
 
 import HousingBanner from '../../components/housingBanner/housingBanner'
 import HousingHost from '../../components/housingHost/housingHost'
 import HousingRate from '../../components/housingRate/housingRate'
-import HousingCollapse from '../../components/housingCollapse/housingCollapse'
+import Collapse from '../../components/collapse/collapse'
 
 import Error from '../error/error'
 
@@ -37,10 +37,24 @@ const Housing = () => {
           imgSrc={housing.host.picture}
         />
       </div>
-      <HousingCollapse
-        description={housing.description}
-        equipments={housing.equipments}
-      />
+      <div className="housing__collapse__container">
+        <Collapse
+          label="Déscription"
+          class="housing__collapse__container__desc"
+          text={<p>{housing.description}</p>}
+        />
+        <Collapse
+          label="Équipements"
+          class="housing__collapse__container__equip"
+          text={
+            <ul>
+              {housing.equipments.map((equipments, index) => (
+                <li key={index}>{equipments}</li>
+              ))}
+            </ul>
+          }
+        />
+      </div>
     </div>
   )
 }
